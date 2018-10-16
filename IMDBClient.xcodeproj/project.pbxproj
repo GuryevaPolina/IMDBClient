@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		9FDBFC9021749000001D5FCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFC8F21749000001D5FCD /* AppDelegate.swift */; };
-		9FDBFC9221749000001D5FCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFC9121749000001D5FCD /* ViewController.swift */; };
+		9FDBFC9221749000001D5FCD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFC9121749000001D5FCD /* SearchViewController.swift */; };
 		9FDBFC9521749000001D5FCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDBFC9321749000001D5FCD /* Main.storyboard */; };
 		9FDBFC9721749004001D5FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FDBFC9621749004001D5FCD /* Assets.xcassets */; };
 		9FDBFC9A21749004001D5FCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDBFC9821749004001D5FCD /* LaunchScreen.storyboard */; };
+		9FDBFCA221749903001D5FCD /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFCA121749903001D5FCD /* MovieTableViewCell.swift */; };
+		9FDBFCA5217499F7001D5FCD /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFCA4217499F7001D5FCD /* MovieDetailViewController.swift */; };
+		9FDBFCA92174A0FE001D5FCD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFCA82174A0FE001D5FCD /* Movie.swift */; };
+		9FDBFCAB2174B595001D5FCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFCAA2174B595001D5FCD /* Constants.swift */; };
+		9FDBFCAD2174C12D001D5FCD /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDBFCAC2174C12D001D5FCD /* ApiRequest.swift */; };
+		A0E645F0BBC0344213C9E787 /* Pods_IMDBClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8FA03BBD1EA14D2ED594DB /* Pods_IMDBClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48BE526D8F884BF59B42A8C9 /* Pods-IMDBClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDBClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMDBClient/Pods-IMDBClient.debug.xcconfig"; sourceTree = "<group>"; };
 		9FDBFC8C21749000001D5FCD /* IMDBClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMDBClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FDBFC8F21749000001D5FCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FDBFC9121749000001D5FCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FDBFC9121749000001D5FCD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9FDBFC9421749000001D5FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FDBFC9621749004001D5FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FDBFC9921749004001D5FCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FDBFC9B21749004001D5FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDBFCA121749903001D5FCD /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		9FDBFCA4217499F7001D5FCD /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		9FDBFCA82174A0FE001D5FCD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9FDBFCAA2174B595001D5FCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FDBFCAC2174C12D001D5FCD /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		AD8FA03BBD1EA14D2ED594DB /* Pods_IMDBClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMDBClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFFF75B469F8A593E695214 /* Pods-IMDBClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDBClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMDBClient/Pods-IMDBClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E645F0BBC0344213C9E787 /* Pods_IMDBClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CC9742DA79058D849C2AF08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD8FA03BBD1EA14D2ED594DB /* Pods_IMDBClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B1773D78EF8F74025B5AC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48BE526D8F884BF59B42A8C9 /* Pods-IMDBClient.debug.xcconfig */,
+				CCFFF75B469F8A593E695214 /* Pods-IMDBClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9FDBFC8321749000001D5FCD = {
 			isa = PBXGroup;
 			children = (
 				9FDBFC8E21749000001D5FCD /* IMDBClient */,
 				9FDBFC8D21749000001D5FCD /* Products */,
+				6B1773D78EF8F74025B5AC61 /* Pods */,
+				4CC9742DA79058D849C2AF08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,51 @@
 		9FDBFC8E21749000001D5FCD /* IMDBClient */ = {
 			isa = PBXGroup;
 			children = (
+				9FDBFCAE2174C134001D5FCD /* Tools */,
+				9FDBFCA72174A0CF001D5FCD /* Model */,
+				9FDBFCA6217499FB001D5FCD /* Cells */,
+				9FDBFCA3217499CA001D5FCD /* ViewControllers */,
 				9FDBFC8F21749000001D5FCD /* AppDelegate.swift */,
-				9FDBFC9121749000001D5FCD /* ViewController.swift */,
 				9FDBFC9321749000001D5FCD /* Main.storyboard */,
 				9FDBFC9621749004001D5FCD /* Assets.xcassets */,
 				9FDBFC9821749004001D5FCD /* LaunchScreen.storyboard */,
 				9FDBFC9B21749004001D5FCD /* Info.plist */,
 			);
 			path = IMDBClient;
+			sourceTree = "<group>";
+		};
+		9FDBFCA3217499CA001D5FCD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FDBFC9121749000001D5FCD /* SearchViewController.swift */,
+				9FDBFCA4217499F7001D5FCD /* MovieDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9FDBFCA6217499FB001D5FCD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9FDBFCA121749903001D5FCD /* MovieTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9FDBFCA72174A0CF001D5FCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FDBFCA82174A0FE001D5FCD /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FDBFCAE2174C134001D5FCD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9FDBFCAC2174C12D001D5FCD /* ApiRequest.swift */,
+				9FDBFCAA2174B595001D5FCD /* Constants.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FDBFC9E21749004001D5FCD /* Build configuration list for PBXNativeTarget "IMDBClient" */;
 			buildPhases = (
+				1FA9852530D5958C495D39D2 /* [CP] Check Pods Manifest.lock */,
 				9FDBFC8821749000001D5FCD /* Sources */,
 				9FDBFC8921749000001D5FCD /* Frameworks */,
 				9FDBFC8A21749000001D5FCD /* Resources */,
+				9490E3417AEDF7E543909416 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +203,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FA9852530D5958C495D39D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMDBClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9490E3417AEDF7E543909416 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IMDBClient/Pods-IMDBClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMDBClient/Pods-IMDBClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FDBFC8821749000001D5FCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FDBFC9221749000001D5FCD /* ViewController.swift in Sources */,
+				9FDBFCA5217499F7001D5FCD /* MovieDetailViewController.swift in Sources */,
+				9FDBFC9221749000001D5FCD /* SearchViewController.swift in Sources */,
 				9FDBFC9021749000001D5FCD /* AppDelegate.swift in Sources */,
+				9FDBFCA221749903001D5FCD /* MovieTableViewCell.swift in Sources */,
+				9FDBFCA92174A0FE001D5FCD /* Movie.swift in Sources */,
+				9FDBFCAD2174C12D001D5FCD /* ApiRequest.swift in Sources */,
+				9FDBFCAB2174B595001D5FCD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +397,7 @@
 		};
 		9FDBFC9F21749004001D5FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BE526D8F884BF59B42A8C9 /* Pods-IMDBClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +416,7 @@
 		};
 		9FDBFCA021749004001D5FCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFFF75B469F8A593E695214 /* Pods-IMDBClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
