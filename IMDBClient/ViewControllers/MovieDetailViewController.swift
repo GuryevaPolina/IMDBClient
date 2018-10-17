@@ -20,7 +20,7 @@ class MovieDetailViewController: UIViewController {
     
     var movie: Movie!
     var blurView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-    var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    var activityIndicator = UIActivityIndicatorView(style: .gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()

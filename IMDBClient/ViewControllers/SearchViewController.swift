@@ -29,7 +29,7 @@ class SearchViewController: UIViewController {
     }
     
     func initView() {
-        movieTableView.rowHeight = UITableViewAutomaticDimension
+        movieTableView.rowHeight = UITableView.automaticDimension
         movieTableView.delegate = self
         movieTableView.dataSource = self
         movieTableView.tableFooterView = UIView()
@@ -88,6 +88,7 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        searchBar.endEditing(true)
         guard let navigator = navigationController,
               let detailVC = UIStoryboard(name: Constants.mainStoryboardName, bundle: nil).instantiateViewController(withIdentifier: Constants.movieDetailViewControllerID) as? MovieDetailViewController,
               let movieArray = movies[indexPath.section] else {return}
@@ -106,11 +107,18 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             movies = [:]
+            movieTableView.reloadData()
+            
             return
         }
         let textForSearch = replaceSpacesByPlus(inText: searchText)
         updateMovies(withName: textForSearch)
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+    }
+
 }
 
 
