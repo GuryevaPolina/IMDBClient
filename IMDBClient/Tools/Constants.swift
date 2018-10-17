@@ -14,6 +14,8 @@ class Constants {
     
     static let mainStoryboardName = "Main"
     static let movieCellID = "movieCell"
+    static let imageCellID = "imageCell"
+    static let textCellID = "textCell"
     static let movieDetailViewControllerID = "movieDetailVC"
     
 }
