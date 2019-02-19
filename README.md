@@ -1,6 +1,6 @@
 # IMDBClient
 
-Client for IMDB API. Technologies: URLSession, REST API, GCD, UIKit
+Client for IMDB API. Technologies: URLSession, REST API, UIKit
 
 Movies search and detalizing them.
 
